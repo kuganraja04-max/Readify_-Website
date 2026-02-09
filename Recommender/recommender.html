@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Readify</title>
+        <link rel="icon" type="image/png" href="../image/book.png" height="150px" width="150px">
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="../manifest.json">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Playfair+Display:wght@600;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Cormorant+Garamond:wght@600;700&family=Fira+Sans:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+       
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../image/logo2.png" alt="Website Logo" height="100px" width="100px" ></a>
+            </div>
+            </div>
+
+            <div>
+                <!-- Navigation Links in Button Formate -->
+                <ul class="nav-links">
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="../Explorer/explorer.html" >Explorer</a></li>
+                    <li><a href="../Tracker/tracker.html" >Tracker</a></li>
+                    <li><a href="recommender.html" >Random</a></li>
+                    <li><a href="../Flow/flow.html" >Flow</a></li>
+                    <li><a href="../Feedback/feedback.html" >Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side Content Sign-In, Donate Buttons and Search Box -->
+            <div class="right-side">
+                <div class="button">
+                    <a href="#" id="openSignIn" class="login-button">Sign-In</a>
+                    <a href="#" class="donate-button">Donate</a>
+                </div>
+
+                <div class="search-item">
+                    <input type="search" placeholder=" Search" class="search-box">
+                    <a href="#"><i class="fa fa-search search-icon"></i></a>
+                </div>
+                
+                
+            </div>
+
+            <!-- hamburger for mobile  -->
+            <div class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- main recommender section -->
+        <main > 
+            <h2>Random Book Recommendation</h2>
+            <p>Click the "Recommend Button To Get Best Book Suggestion"</p>
+
+            <!-- Filter Section -->
+             <div class="filters">
+                <label>Genre:</label>
+                <select id="genre">
+                    <option value="all">All</option>
+                    <option value="fiction">fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="self-help">Self-Help</option>
+                </select>
+
+
+                <label>Length</label>
+                <select id="length">
+                    <option value="all">All</option>
+                    <option value="short">Short</option>
+                    <option value="medium">Medium</option>
+                    <option value="long">Long</option>
+                </select>
+             </div>
+
+             <!-- Buttons in recommendation -->
+              <div class="buttons">
+                <button onclick="recommendBook()">Recommend</button>
+                <button onclick="pickAgain()">Pick New one</button>
+                <button onclick="saveToReadingList()">Save To Read List</button>
+              </div>
+
+              <p id="msg" class="msg"></p>
+
+            <!-- Recommendation Card -->
+              <div id="card" class=" card">
+                <img id="bookImage" src="../image/Recommend_book/R_image1.webp" alt="Book Image" class="cover">
+                
+                <h3 id="bookTitle">No Book</h3>
+                <p id="bookAuthor">Author: </p>
+                <p id="bookGenre">Genre: </p>
+                <p id="bookLength">Length: </p>
+              </div>
+
+              <h3>My Reading List</h3>
+              <ul id="readingList"></ul>
+        </main>
+
+        <!-- footer section -->
+         <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <img src="../image/logo2.png" alt="Readify Logo" class="footer-logo">
+                    <div class="footer-brand">Readify</div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-toptext">Created And Managed By Readify @ 2026</div>
+                    <form class="footer-search" id="newsletterForm">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+                        <button type="button" onclick="saveEmail()">Submit</button>
+                        <p id="message"></p>
+                    </form>
+
+                    <nav class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="../Explorer/explorer.html">Explorer</a>
+                        <a href="../Tracker/tracker.html">Tracker</a>
+                        <a href="recommender.html">Recommend</a>
+                        <a href="../Flow/flow.html">Flow</a>
+                        <a href="../Feedback/feedback.html">Feedback</a>
+                    </nav>
+                </div>
+            </div>
+         </footer>
+
+
+        <script src="script.js" defer></script>
+        <script src="../signin.js" defer></script>
+    </body>
+</html>
+
+
+
+

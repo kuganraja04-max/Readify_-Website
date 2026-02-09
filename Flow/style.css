@@ -1,0 +1,512 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #2d518b;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.navbar .logo{
+    max-width: 100px;
+    margin-left: 30px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-links li{
+    margin-top: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.nav-links a:hover{
+    background-color: #1362eb;
+}
+
+.nav-links a:active{
+    color: black;
+    background-color: #d6e0ea;
+}
+
+
+.nav-links a.active{
+    color: black;
+    background-color: #d6e0ea;
+
+}
+
+.nav-links li a{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.nav-links li a{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 55px;
+    width: 200px;
+    height: 50px;
+    border-top: none;
+    color: white;
+    font-size: 20px;
+    background-color: #2d518b; 
+     /* #2d518b */
+    border-right: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    transition: 0.3s;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.button{
+    margin-right: 40px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.login-button{
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    background-color: wheat;
+    text-decoration: underline;
+}
+
+.donate-button{
+    background-color: yellow;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.donate-button:hover{
+    background-color:  rgb(255, 183, 48) ;
+    text-decoration: none;
+}
+
+
+.search-item{
+    position: relative;
+}
+
+.search-box{
+    padding: 8px 30px 8px 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: gray;
+}
+
+body {
+  background-color: #d6e0ea;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Section */
+header{
+    text-align: center;
+}
+.flow-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    flex: 1;
+}
+
+.flow-container .search{
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15); 
+}
+
+
+.flow-container h2{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.sounds{
+    text-align: center;
+}
+
+.sounds button{
+    margin: 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+}
+
+.sounds button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.sounds button:active{
+    transform: scale(0.90);
+}
+
+.sounds i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: red;
+}
+
+.search input{
+    width: 70%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border:1px solid #1362eb;
+}
+
+.search button{
+    padding: 10px 14px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #2d518b;
+    color: white;
+}
+
+.search button:hover{
+    background-color:#1362eb;
+    color: white;
+}
+
+#bookList{
+    list-style: none;
+}
+
+#bookList li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 14px;
+    gap: 10px;
+}
+
+/* main button */
+.sounds button{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+
+header h1{
+  font-family: 'Righteous', cursive;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* footer */
+
+.site-footer{
+  background-color: #31353d;
+  color: #fff;
+  padding: 60px 40px;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-logo{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.footer-brand{
+  font-size: 20px;
+  opacity: 0.9;
+  margin-left: 5px;
+}
+
+.footer-right{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-right #email,
+.footer-right button{
+  background-color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+.footer-toptext{
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-links a:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+
+
+
+/* hamburger for resnponsive mobile */
+.hamburger{
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* To make responsive give for mobile */
+@media (max-width: 900px) {
+  .hamburger{
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    opacity: 0.9;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #2d518b;
+    position: relative;
+  }
+
+  .navbar .nav-links,
+  .navbar .right-side{
+    display: none;
+    width: 100%;
+  }
+
+  .navbar .nav-links.active,
+  .navbar .right-side.active{
+    display: flex;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    background-color: #2d518b;
+    margin-top: 0;
+  }
+
+  .navbar .nav-links li{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .nav-links li a{
+    width: 100%;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-top: 0;
+    padding: 12px 0;
+  } 
+
+  .nav-links a.active{
+    background-color: white;
+    color: #2d518b;
+    font-weight: 600;
+  }
+
+  .right-side{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 10px;
+    gap: 12px;
+  }
+
+  .button{
+    margin: 0;
+    justify-content: center;
+  }
+
+  .search-item{
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .search-box{
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    font-size: 15px;
+  }
+
+  .search-icon{
+    top: 12px;
+    right: 14px;
+  }
+
+  .flow-container{
+    grid-template-columns: 1fr;   /* 2 columns → 1 column */
+    gap: 18px;
+    padding: 14px;
+  }
+
+  header h1{
+    font-size: 26px;
+  }
+
+  header p{
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  /* sound buttons wrap + look clean */
+  .sounds{
+    text-align: center;
+  }
+
+  .sounds button{
+    width: 48%;                  /* 2 per row */
+    margin: 6px 1%;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  /* book section input + button full width */
+  .search input{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search button{
+    width: 100%;
+  }
+
+  /* list spacing */
+  #bookList li{
+    padding: 10px}
+
+  
+}
+
+
+
+/* Extra small phones */
+@media (max-width: 480px){
+  .sounds button{
+    width: 100%;                 /* 1 per row */
+    margin: 6px 0;
+  }
+}
+
+
+
+
+/* mobile responsive footer */
+@media (max-width: 800px){
+  .footer-links{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right{
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-links{
+    justify-content: flex-start;
+  }
+}
+
+
